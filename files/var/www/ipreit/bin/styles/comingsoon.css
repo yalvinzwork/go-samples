@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    background: url('/img/coming-soon.jpg') no-repeat center center / cover;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.coming-soon {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    left: 50%;
+    min-width: 720px;
+    padding: 30px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .coming-soon {
+        min-width: initial;
+        width: 90%;
+    }
+}
