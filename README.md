@@ -1,3 +1,7 @@
+install dep (go get -u github.com/golang/dep/cmd/dep)
+
+dep ensure -v
+
 go build ./cmd/frontend/ && ./frontend -debug -l /var/log/ipreit/ipreit.access.log -e /var/log/ipreit/ipreit.error.log
 
 go build ./cmd/web/ && ./web -debug -l /var/log/ipreit/ipreit.access.log -e /var/log/ipreit/ipreit.error.log
