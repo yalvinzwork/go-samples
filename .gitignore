@@ -2,3 +2,5 @@ web
 frontend
 !web/
 !frontend/
+
+vendor/
