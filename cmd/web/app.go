@@ -3,14 +3,14 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/google/gops/agent"
 	"log"
 	"net/http"
 
-	ifsconfig "github.com/yalvinz/ipreit/config"
-	"github.com/yalvinz/ipreit/hello"
-	"github.com/yalvinz/ipreit/util/grace"
-	"github.com/yalvinz/ipreit/util/logging"
+	"github.com/google/gops/agent"
+	ifsconfig "github.com/yalvinz/go-sample/config"
+	"github.com/yalvinz/go-sample/hello"
+	"github.com/yalvinz/go-sample/util/grace"
+	"github.com/yalvinz/go-sample/util/logging"
 )
 
 func main() {

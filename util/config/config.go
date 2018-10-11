@@ -7,7 +7,7 @@ import (
 )
 
 func ReadModuleConfig(cfg interface{}, path string, module string) error {
-	environ := os.Getenv("IFSENV")
+	environ := os.Getenv("PENV")
 	if environ == "" {
 		environ = "development"
 	}

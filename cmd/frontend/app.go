@@ -6,9 +6,10 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/yalvinz/ipreit/util/grace"
-	"github.com/yalvinz/ipreit/util/logging"
+	"github.com/yalvinz/go-sample/util/grace"
+	"github.com/yalvinz/go-sample/util/logging"
 )
+
 var tpl *template.Template
 
 func main() {
@@ -27,7 +28,7 @@ func main() {
 
 // please move below codes to module instead defining in app.go
 func init() {
-	tpl = template.Must(template.ParseGlob("/var/www/ipreit/bin/templates/*.gohtml"))
+	tpl = template.Must(template.ParseGlob("/var/www/go-sample/bin/templates/*.gohtml"))
 }
 
 func idx(w http.ResponseWriter, req *http.Request) {
